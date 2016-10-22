@@ -2,7 +2,7 @@
 
 Name:           %{?scl_prefix}perl-autodie
 Version:        2.29
-Release:        367%{?dist}
+Release:        368%{?dist}
 Summary:        Replace functions with ones that succeed or die
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -106,6 +106,9 @@ find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} \;
 %{_mandir}/man3/*
 
 %changelog
+* Sun Jul 24 2016 Petr Pisar <ppisar@redhat.com> - 2.29-368
+- Rebuild without bootstrap
+
 * Mon Jul 11 2016 Petr Pisar <ppisar@redhat.com> - 2.29-367
 - SCL
 
