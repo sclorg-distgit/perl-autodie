@@ -9,7 +9,7 @@
 
 Name:           %{?scl_prefix}perl-autodie
 Version:        2.29
-Release:        451%{?dist}
+Release:        452%{?dist}
 Summary:        Replace functions with ones that succeed or die
 License:        GPL+ or Artistic
 URL:            https://metacpan.org/release/autodie
@@ -103,6 +103,9 @@ find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} \;
 %{_mandir}/man3/*
 
 %changelog
+* Tue Jan 07 2020 Jitka Plesnikova <jplesnik@redhat.com> - 2.29-452
+- Re-rebuild of bootstrapped packages
+
 * Fri Dec 20 2019 Jitka Plesnikova <jplesnik@redhat.com> - 2.29-451
 - SCL
 
